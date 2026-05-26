@@ -1,10 +1,29 @@
-# Sumerian Translator MVP
+## Repository structure
+
+```text
+modules/
+├── ocr/
+├── detection/
+├── classification/
+└── translation/# Sumerian Translator MVP
 
 This repository contains the MVP application layer for the Sumerian cuneiform recognition and translation system.
 
 The application is implemented with Gradio and integrates the main stages of the proposed pipeline:
 
 Image → OCR / sign detection → Transliteration → Machine translation → Manual correction
+
+## Research modules
+
+This repository also contains lightweight copies of the research module code used in the project:
+
+- `modules/ocr` — OCR and ATF conversion scripts
+- `modules/detection` — sign detection code based on YOLO and Faster R-CNN experiments
+- `modules/classification` — sign classification training and evaluation code with experiment configs
+- `modules/translation` — machine translation training, inference and metric scripts
+
+Large model checkpoints, datasets and training artifacts are not included in this repository.
+
 
 ## Purpose
 
